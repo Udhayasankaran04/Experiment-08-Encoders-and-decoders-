@@ -132,11 +132,13 @@ Decoder
 
 Encoder
 
-![245389502-ccd3a5ea-a582-41c3-ae26-367af6183d62](https://github.com/Sudharsanram/Experiment-08-Encoders-and-decoders-/assets/119393980/19ff53e8-6da8-40c8-8aa0-91e21611531d)
+![image](https://github.com/Sudharsanram/Experiment-08-Encoders-and-decoders-/assets/119393980/bd5be4c2-7afa-4ba9-8606-05514c0ba5b2)
+
 
 Decoder
 
-![245389543-a3ecb838-4e46-4043-ab49-2f16f2cc1b2a](https://github.com/Sudharsanram/Experiment-08-Encoders-and-decoders-/assets/119393980/5566e59d-7cdb-483f-a9b2-1acdef3d1522)
+![image](https://github.com/Sudharsanram/Experiment-08-Encoders-and-decoders-/assets/119393980/786d0a22-1175-46fd-9496-c0a411d970bc)
+
 
 
 ### RESULTS 
