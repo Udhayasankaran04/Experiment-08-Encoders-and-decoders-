@@ -55,32 +55,74 @@ D7 = X Y Z
 ## Figure -04 8 to 3 Decoder implementation 
 
 ### Procedure
-/* write all the steps invloved */
 
+1.create module encoder and decoder.
 
+2.Get inputs and outputs for encoders and decoders.
+
+3.perform or operation for encoder and and logic for decoders.
+
+4.perform RTL LOGIC and get waveform.
 
 ### PROGRAM 
 /*
 Program for Endocers and Decoders  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: SUDHARSAN RAM M
+RegisterNumber:  212222110048
 */
 
+```
+ENCODER:
+module encoder(a,b,c,d0,d1,d2,d3,d4,d5,d6,d7);
+output a,b,c;
+input d0,d1,d2,d3,d4,d5,d6,d7;
+or(a,d4,d5,d6,d7);
+or(b,d2,d3,d6,d7);
+or(c,d1,d3,d5,d7);
+endmodule
 
+
+DECODER:
+module decoder(d0,d1,d2,d3,d4,d5,d6,d7,a,b,c);
+output d0,d1,d2,d3,d4,d5,d6,d7;
+input a,b,c;
+assign d0 = (~a&~b&~c);
+assign d1 = (~a&~b&c);
+assign d2 = (~a&b&~c);
+assign d3 = (~a&b&c);
+assign d4 = (a&~b&~c);
+assign d5 = (a&~b&c);
+assign d6 = (a&b&~c);
+assign d7 = (a&b&c);
+endmodule
+
+```
 
 
 
 
 ### RTL LOGIC  
 
+Encoder
 
+![245388930-38853c0d-7042-48c7-bcca-0e96189a547a](https://github.com/Sudharsanram/Experiment-08-Encoders-and-decoders-/assets/119393980/0505e2bc-6aa2-4089-8fb1-5ce51951f26a)
 
+Decoder
 
+![245389094-5791712d-4bd6-40d8-a1d4-bd152078ce12](https://github.com/Sudharsanram/Experiment-08-Encoders-and-decoders-/assets/119393980/1311b817-7dd7-4db4-ab38-626a7c50826b)
 
 
 
 
 ### TIMING DIGRAMS  
+
+Encoder
+
+![245389255-4220560c-5266-4437-be66-3125c54fada7](https://github.com/Sudharsanram/Experiment-08-Encoders-and-decoders-/assets/119393980/c15a5f84-b485-4ac4-bef8-bf2dfe24a51e)
+
+Decoder
+
+![245389331-62130ea6-bbb8-4c60-8c2b-fa440ebe5cbe](https://github.com/Sudharsanram/Experiment-08-Encoders-and-decoders-/assets/119393980/407c8ad2-8534-4c7e-9a20-587c099696e0)
 
 
 
@@ -88,9 +130,15 @@ RegisterNumber:
 
 ### TRUTH TABLE 
 
+Encoder
 
+![245389502-ccd3a5ea-a582-41c3-ae26-367af6183d62](https://github.com/Sudharsanram/Experiment-08-Encoders-and-decoders-/assets/119393980/19ff53e8-6da8-40c8-8aa0-91e21611531d)
 
+Decoder
 
+![245389543-a3ecb838-4e46-4043-ab49-2f16f2cc1b2a](https://github.com/Sudharsanram/Experiment-08-Encoders-and-decoders-/assets/119393980/5566e59d-7cdb-483f-a9b2-1acdef3d1522)
 
 
 ### RESULTS 
+
+Thus the program to desing encoder and decoder is done.
